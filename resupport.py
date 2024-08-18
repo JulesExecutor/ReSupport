@@ -8,7 +8,7 @@ def run_app_executable(app_path):
         return
 
 
-    contents_path = os.path.join(app_path, 'Contents')
+    contents_path = os.path.join(app_path, 'Contents', "MacOS")
     if not os.path.isdir(contents_path):
         print("The 'Contents' directory does not exist inside the .app bundle.")
         return
